@@ -110,6 +110,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Video Embed Section */}
+      <div className="w-full flex justify-center px-4 py-16 md:py-20 bg-[#111]">
+        <div className="w-full max-w-[900px] aspect-video rounded-2xl overflow-hidden shadow-2xl">
+          <iframe
+            src="https://drive.google.com/file/d/1awqjT-lpoLYEbkMM84roJ9WSjihXstaZ/preview"
+            allow="autoplay"
+            allowFullScreen
+            className="w-full h-full"
+            title="Alice Broker - Presentazione"
+          />
+        </div>
+      </div>
+
       {/* Target Audience Section */}
       <section className="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto">
