@@ -238,22 +238,40 @@ export default function Home() {
             </p>
 
             <div className="bg-white rounded-xl p-6 mb-8 border border-gray-200">
-              <p className="text-gray-600 font-['DM_Sans'] text-sm mb-4">
+              <p className="text-gray-600 font-['DM_Sans'] text-sm mb-6">
                 Accedi e vedi in tempo reale come gestisci le tue auto:
               </p>
-              <div className="space-y-3">
+
+              {/* Credenziali di accesso */}
+              <div className="space-y-4 mb-6">
                 <div>
-                  <p className="text-gray-500 font-['DM_Sans'] text-xs font-semibold mb-1">URL:</p>
-                  <p className="text-black font-['DM_Sans'] text-sm font-medium">demo.auto-broker.it</p>
+                  <p className="text-gray-500 font-['DM_Sans'] text-xs font-semibold mb-2 uppercase tracking-wider">Email accesso area admin:</p>
+                  <div className="bg-gray-100 rounded-lg p-3 border border-gray-300">
+                    <p className="text-black font-['DM_Sans'] text-sm font-medium break-all">[email protected]</p>
+                  </div>
                 </div>
                 <div>
-                  <p className="text-gray-500 font-['DM_Sans'] text-xs font-semibold mb-1">Email:</p>
-                  <p className="text-black font-['DM_Sans'] text-sm font-medium">[email protected]</p>
+                  <p className="text-gray-500 font-['DM_Sans'] text-xs font-semibold mb-2 uppercase tracking-wider">Password:</p>
+                  <div className="bg-gray-100 rounded-lg p-3 border border-gray-300">
+                    <p className="text-black font-['DM_Sans'] text-sm font-medium">demo2026</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-gray-500 font-['DM_Sans'] text-xs font-semibold mb-1">Password:</p>
-                  <p className="text-black font-['DM_Sans'] text-sm font-medium">demo2026</p>
-                </div>
+              </div>
+
+              {/* Link cliccabile */}
+              <div className="border-t pt-6">
+                <p className="text-gray-600 font-['DM_Sans'] text-sm mb-3">
+                  <span className="font-semibold">Clicca il link:</span>
+                </p>
+                <a
+                  href="https://demo.auto-broker.it"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#c9a84c] to-[#d4b85f] hover:from-[#d4b85f] hover:to-[#c9a84c] text-black px-6 py-3 rounded-full font-['DM_Sans'] text-sm font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#c9a84c]/30"
+                >
+                  <span>demo.auto-broker.it</span>
+                  <i className="fa-solid fa-arrow-up-right text-sm"></i>
+                </a>
               </div>
             </div>
 
