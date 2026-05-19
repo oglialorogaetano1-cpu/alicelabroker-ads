@@ -229,15 +229,15 @@ export default function Home() {
           </div>
 
           {/* DEMO LIVE */}
-          <div className="bg-gradient-to-br from-[#c9a84c]/10 to-[#c9a84c]/5 rounded-2xl p-8 sm:p-12 max-w-2xl mx-auto border border-[#c9a84c]/20">
+          <div className="bg-gradient-to-br from-[#c9a84c]/10 to-[#c9a84c]/5 rounded-2xl p-8 sm:p-12 max-w-4xl mx-auto border border-[#c9a84c]/20">
             <h3 className="font-['Playfair_Display'] text-2xl sm:text-3xl text-black font-medium mb-4 text-center">
               DEMO LIVE
             </h3>
-            <p className="text-gray-700 font-['DM_Sans'] text-base text-center mb-6">
+            <p className="text-gray-700 font-['DM_Sans'] text-base text-center mb-8">
               GUARDA COME SARÀ IL TUO SITO
             </p>
 
-            <div className="bg-white rounded-xl p-6 mb-6 border border-gray-200">
+            <div className="bg-white rounded-xl p-6 mb-8 border border-gray-200">
               <p className="text-gray-600 font-['DM_Sans'] text-sm mb-4">
                 Accedi e vedi in tempo reale come gestisci le tue auto:
               </p>
@@ -254,6 +254,26 @@ export default function Home() {
                   <p className="text-gray-500 font-['DM_Sans'] text-xs font-semibold mb-1">Password:</p>
                   <p className="text-black font-['DM_Sans'] text-sm font-medium">demo2026</p>
                 </div>
+              </div>
+            </div>
+
+            {/* Screenshots Grid */}
+            <div className="grid sm:grid-cols-2 gap-6 mb-8">
+              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+                <img
+                  src="/images/demo-public.png"
+                  alt="Demo - Homepage con auto selezionate"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
+              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-lg">
+                <img
+                  src="/images/demo-admin.png"
+                  alt="Demo - Dashboard admin per gestire le auto"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
               </div>
             </div>
 
